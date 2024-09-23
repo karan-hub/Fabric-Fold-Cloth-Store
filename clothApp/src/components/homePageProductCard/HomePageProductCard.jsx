@@ -118,7 +118,7 @@ const HomePageProductCard = () => {
                                         </div>
                                         <div className="p-6">
                                             <h2 className="tracking-widest text-xs title-font font-medium text-pink-500 mb-1">
-                                                Fabric Fold
+                                            THE FABRIC FOLD
                                             </h2>
                                             <h1 className="title-font text-lg font-semibold text-gray-900 mb-3">
                                                 {title.length > 25 ? `${title.substring(0, 25)}...` : title}

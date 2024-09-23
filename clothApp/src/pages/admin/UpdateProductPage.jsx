@@ -105,6 +105,7 @@ const UpdateProductPage = () => {
             <div className='flex flex-col md:flex-row gap-4 max-w-3xl w-full'>
                 {loading && <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50"><Loader /></div>}
                 <div className="text-4xl md:text-6xl flex flex-col font-playwrite gap-2 pl-2 items-start justify-center rounded-lg w-full md:w-1/3 text-custom-pink bg-white font-extrabold text-center py-4">
+                    <h1>THE</h1>
                     <h1>Fabric</h1>
                     <h1>Fold</h1>
                 </div>

@@ -121,7 +121,7 @@ const Navbar = () => {
         <div className="w-full sticky top-0 z-50">
             <div className="flex bg-pink-100  opacity-80 justify-center py-2">
                 <div className="w-full lg:w-4/6 flex justify-end pr-5 text-pink-800 font-bold text-sm">
-                    <a href="tel:+19848505824">+19 8485 0582 84</a>
+                    <a href="https://wa.me/8390394421">+91 839 0394 421</a>
                 </div>
             </div>
 
@@ -129,7 +129,7 @@ const Navbar = () => {
                 <div className="w-full lg:w-4/6 flex flex-row lg:justify-between items-center py-3 lg:px-3 gap-5">
                     <div className="text-center lg:text-left w-full lg:w-auto">
                         <Link to="/">
-                            <h2 className="font-bold text-white text-2xl">Fabric Fold</h2>
+                            <h2 className="font-bold text-white text-2xl">THE FABRIC FOLD</h2>
                         </Link>
                     </div>
 
