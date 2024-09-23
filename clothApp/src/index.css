@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Sofadi+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your other styles */
