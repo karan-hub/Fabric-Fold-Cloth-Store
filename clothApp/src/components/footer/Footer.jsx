@@ -48,9 +48,9 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12 sm:py-16">
         <div className="flex justify-between items-center border-b border-pink-200 pb-8 mb-8">
           <div className="mb-6 text-center ">
-            <h2 className="text-3xl sm:text-4xl font-bold text-pink-600">THE FABRIC FOLD</h2>
+            <h6 className="text-xl items-center justify-center sm:text-4xl font-bold text-pink-600">THE FABRIC FOLD</h6>
           </div>
-          <div ref={socialIconsRef} className="flex justify-center space-x-8">
+          <div ref={socialIconsRef} className="flex    items-center gap-3 sm:space-x-8">
             {[
               { icon: <FaFacebookF />, href: '#facebook' },
               { icon: <FaTwitter />, href: '#twitter' },
