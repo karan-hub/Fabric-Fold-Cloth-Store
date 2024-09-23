@@ -46,9 +46,9 @@ export default function Footer() {
   return (
     <footer ref={footerRef} className="bg-gradient-to-b from-pink-50 to-purple-100 text-gray-800">
       <div className="container mx-auto px-4 py-12 sm:py-16">
-        <div className="flex  justify-between items-center border-b border-pink-200 pb-8 mb-8">
+        <div className="flex justify-between items-center border-b border-pink-200 pb-8 mb-8">
           <div className="mb-6 text-center ">
-            <h2 className="text-3xl sm:text-4xl font-bold text-pink-600">ClothApp</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-pink-600">THE FABRIC FOLD</h2>
           </div>
           <div ref={socialIconsRef} className="flex justify-center space-x-8">
             {[
@@ -63,41 +63,24 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-8">
+        <div className="flex flex-col sm:flex-row lg:flex-row gap-12">
           {[
             { 
-              title: "About ClothApp", 
-              content: "Elevate your style with ClothApp. We curate the finest fashion pieces, bringing you a seamless blend of comfort and elegance." 
-            },
-            { 
-              title: "Explore", 
-              links: ["New Arrivals", "Best Sellers", "Summer Collection", "Sustainable Fashion"] 
+              title: "ABOUT THE FABRIC FOLD", 
+              content: "Elevate your style with THE FABRIC FOLD. We curate the finest fashion pieces, bringing you a seamless blend of comfort and elegance." 
             },
             { 
               title: "Customer Care", 
-              links: ["Track Order", "Returns & Exchanges", "Size Guide", "Gift Cards"] 
-            },
-            { 
-              title: "Get in Touch", 
               items: [
                 { icon: <FaMapMarkerAlt />, text: "123 Fashion Avenue, New York, NY 10001" },
-                { icon: <FaEnvelope />, text: "hello@clothapp.com" },
-                { icon: <FaPhone />, text: "+1 (555) 123-4567" }
+                { icon: <FaEnvelope />, text: "hello@thefabricfold.com" },
+                { icon: <FaPhone />, text: "+91 8390394421" }
               ]
             }
           ].map((section, index) => (
-            <div key={section.title} ref={(el) => (sectionsRef.current[index] = el)} className="mb-8 sm:mb-0">
-              <h6 className="text-xl sm:text-2xl font-bold mb-6 text-pink-700">{section.title}</h6>
-              {section.content && <p className="text-gray-700 text-base sm:text-lg">{section.content}</p>}
-              {section.links && (
-                <ul className="space-y-3">
-                  {section.links.map((link) => (
-                    <li key={link}>
-                      <a href={`#${link.toLowerCase().replace(/\s+/g, '-')}`} className="text-gray-700 hover:text-pink-600 transition-colors duration-300 text-base sm:text-lg">{link}</a>
-                    </li>
-                  ))}
-                </ul>
-              )}
+            <div key={section.title} ref={(el) => (sectionsRef.current[index] = el)} className="flex-1 mb-8 sm:mb-0 p-6 bg-white rounded-lg shadow-md transition-transform transform hover:scale-105">
+              <h6 className="text-xl sm:text-2xl font-bold mb-4 text-pink-700">{section.title}</h6>
+              {section.content && <p className="text-gray-700 text-base sm:text-lg mb-4">{section.content}</p>}
               {section.items && (
                 <ul className="space-y-4">
                   {section.items.map((item, i) => (
@@ -115,7 +98,7 @@ export default function Footer() {
 
       <div className="bg-pink-600 py-6">
         <div className="container mx-auto px-4 text-center text-sm sm:text-base text-white">
-          <span>© 2023 ClothApp - Elevate Your Style. All rights reserved.</span>
+          <span>© 2023 THE FABRIC FOLD - Elevate Your Style. All rights reserved.</span>
         </div>
       </div>
     </footer>

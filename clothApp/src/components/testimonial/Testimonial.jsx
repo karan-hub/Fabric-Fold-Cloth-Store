@@ -52,38 +52,38 @@ const Testimonial = () => {
     {
       name: "Emily Johnson",
       role: "Fashion Blogger",
-      content: "ClothApp has revolutionized my wardrobe! The quality and style of their clothes are unmatched. I'm always excited to see their new collections.",
+      content: "THE FABRIC FOLD has revolutionized my wardrobe! The quality and style of their clothes are unmatched. I'm always excited to see their new collections.",
       image: "https://randomuser.me/api/portraits/women/1.jpg"
     },
     {
       name: "Michael Chen",
       role: "Entrepreneur",
-      content: "As someone always on the go, I appreciate ClothApp's efficient service and trendy selections. It's my go-to for both casual and business attire.",
+      content: "As someone always on the go, I appreciate THE FABRIC FOLD's efficient service and trendy selections. It's my go-to for both casual and business attire.",
       image: "https://randomuser.me/api/portraits/men/2.jpg"
     },
     {
       name: "Sophia Rodriguez",
       role: "Fitness Instructor",
-      content: "The athleisure collection from ClothApp is perfect for my active lifestyle. Comfortable, stylish, and durable - exactly what I need!",
+      content: "The athleisure collection from THE FABRIC FOLD is perfect for my active lifestyle. Comfortable, stylish, and durable - exactly what I need!",
       image: "https://randomuser.me/api/portraits/women/3.jpg"
     },
     // Duplicate testimonials to create a seamless loop
     {
       name: "Emily Johnson",
       role: "Fashion Blogger",
-      content: "ClothApp has revolutionized my wardrobe! The quality and style of their clothes are unmatched. I'm always excited to see their new collections.",
+      content: "THE FABRIC FOLD has revolutionized my wardrobe! The quality and style of their clothes are unmatched. I'm always excited to see their new collections.",
       image: "https://randomuser.me/api/portraits/women/1.jpg"
     },
     {
       name: "Michael Chen",
       role: "Entrepreneur",
-      content: "As someone always on the go, I appreciate ClothApp's efficient service and trendy selections. It's my go-to for both casual and business attire.",
+      content: "As someone always on the go, I appreciate THE FABRIC FOLD's efficient service and trendy selections. It's my go-to for both casual and business attire.",
       image: "https://randomuser.me/api/portraits/men/2.jpg"
     },
     {
       name: "Sophia Rodriguez",
       role: "Fitness Instructor",
-      content: "The athleisure collection from ClothApp is perfect for my active lifestyle. Comfortable, stylish, and durable - exactly what I need!",
+      content: "The athleisure collection from THE FABRIC FOLD is perfect for my active lifestyle. Comfortable, stylish, and durable - exactly what I need!",
       image: "https://randomuser.me/api/portraits/women/3.jpg"
     }
   ];
@@ -96,7 +96,7 @@ const Testimonial = () => {
             What Our Customers Say
           </h2>
           <p ref={descriptionRef} className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our satisfied customers have to say about their experience with ClothApp.
+            Don't just take our word for it. Here's what our satisfied customers have to say about their experience with THE FABRIC FOLD.
           </p>
         </div>
 
