@@ -145,13 +145,13 @@ const HeroSection = () => {
           {/* Call to Action */}
           <div ref={btnRef} className="flex justify-center space-x-6">
             <a
-              href="#shop"
+              href="/allproduct"
               className="bg-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-pink-700 transition duration-300 transform hover:scale-105"
             >
               Shop Now
             </a>
             <a
-              href="#collections"
+              href="/allproduct"
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-white hover:text-pink-600 transition duration-300 transform hover:scale-105"
             >
               Explore Collections
