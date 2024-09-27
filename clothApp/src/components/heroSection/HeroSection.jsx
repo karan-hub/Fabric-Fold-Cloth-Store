@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,6 +13,7 @@ const HeroSection = () => {
   const videoRef = useRef(null);
   const cursorRef = useRef(null);
   const cursorCircleRef = useRef(null);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -108,6 +109,11 @@ const HeroSection = () => {
     };
   }, []);
 
+  const handleButtonClick = (path) => {
+    // Navigate to the specified path
+    navigate(path);
+  };
+
   return (
     <section ref={sectionRef} className="relative h-screen overflow-hidden">
       {/* Background Video */}
@@ -145,18 +151,18 @@ const HeroSection = () => {
 
           {/* Call to Action */}
           <div ref={btnRef} className="flex justify-center space-x-6">
-            <Link
-              to="/allproduct"
+            <button
+              onClick={() => handleButtonClick("/allproduct")}
               className="bg-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-pink-700 transition duration-300 transform hover:scale-105"
             >
               Shop Now
-            </Link>
-            <Link
-              to="/allproduct"
+            </button>
+            <button
+              onClick={() => handleButtonClick("/allproduct")}
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-white hover:text-pink-600 transition duration-300 transform hover:scale-105"
             >
               Explore Collections
-            </Link>
+            </button>
           </div>
         </div>
       </div>
